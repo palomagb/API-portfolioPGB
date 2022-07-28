@@ -50,22 +50,6 @@ public class LaboralController {
             return ResponseEntity.badRequest().build();
         }
     }
-
-    /*
-    @DeleteMapping("/{id}")
-    public ResponseEntity delete(@PathVariable Integer id){
-        ResponseEntity response = null;
-        if(laboralService.getById(id) == null) {
-            response = new ResponseEntity(HttpStatus.NOT_FOUND); // 404 not found se podria cambiar por un mensaje personalizado?
-        }
-        else{
-            laboralService.delete(id);
-            response= ResponseEntity.ok("Se eliminó la persona con Id " + id);
-        }
-        return response;
-    }
-
-    */
     
     @DeleteMapping("/{id}")
     public ResponseEntity<LaboralModel> delete(@PathVariable int id) {

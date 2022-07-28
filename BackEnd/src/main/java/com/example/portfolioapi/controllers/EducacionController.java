@@ -51,6 +51,7 @@ public class EducacionController {
         }
     }
 
+    //Una opción de Delete:
     //@DeleteMapping("/{id}")
     //public ResponseEntity eliminarPorId(@PathVariable(value = "id") int id) {
     //    ResponseEntity response = null;

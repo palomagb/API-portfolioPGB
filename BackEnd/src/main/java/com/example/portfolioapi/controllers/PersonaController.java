@@ -51,11 +51,6 @@ public class PersonaController {
             return ResponseEntity.badRequest().build();
         }
     }
-
-    //@DeleteMapping("/{id}")
-    //public void delete(@PathVariable int id) {
-    //    PersonaService.delete(id);
-    //}
     
     @DeleteMapping("/{id}")
     public ResponseEntity<PersonaModel> delete(@PathVariable int id) {

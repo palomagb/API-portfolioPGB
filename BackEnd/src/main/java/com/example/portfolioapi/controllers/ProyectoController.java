@@ -50,6 +50,7 @@ public class ProyectoController {
             return ResponseEntity.badRequest().build();
         }
     }
+    
     @DeleteMapping("/{id}")
     public ResponseEntity<ProyectoModel> delete(@PathVariable int id) {
         boolean ok = proyectoService.delete(id);
